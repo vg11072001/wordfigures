@@ -22,7 +22,7 @@
   <g transform="translate(20,40)">
     <!-- Animated text entries -->
     <g>
-      <text x="2" y="65" font-family="monospace" font-size="10" fill="#495057" opacity="0">
+      <text x="5" y="65" font-family="monospace" font-size="10" fill="#495057" opacity="0">
         {"text":"data"}
         <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="1s" repeatCount="indefinite"/>
       </text>
