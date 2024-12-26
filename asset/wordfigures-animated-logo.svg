@@ -22,17 +22,9 @@
   <g transform="translate(20,40)">
     <!-- Animated text entries -->
     <g>
-      <text x="3" y="30" font-family="monospace" font-size="10" fill="#495057" opacity="0">
-        {"text":"hello"}
-        <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="0s" repeatCount="indefinite"/>
-      </text>
-      <text x="3" y="50" font-family="monospace" font-size="10" fill="#495057" opacity="0">
-        {"raw":"data"}
+      <text x="2" y="65" font-family="monospace" font-size="10" fill="#495057" opacity="0">
+        {"text":"data"}
         <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="1s" repeatCount="indefinite"/>
-      </text>
-      <text x="3" y="70" font-family="monospace" font-size="10" fill="#495057" opacity="0">
-        {"input":"words"}
-        <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="2s" repeatCount="indefinite"/>
       </text>
     </g>
   </g>
@@ -139,7 +131,7 @@
   <g transform="translate(200,160)">
     <text text-anchor="middle" font-family="Arial, sans-serif">
       <tspan x="0" y="0" font-size="24" font-weight="bold" fill="#212529">WordFigures</tspan>
-      <tspan x="0" y="20" font-size="10" fill="#495057">Text to Advanced Language Models</tspan>
+      <tspan x="0" y="20" font-size="10" fill="#495057">Shaping Language as it evolves from basic to complex forms</tspan>
     </text>
   </g>
 </svg>
