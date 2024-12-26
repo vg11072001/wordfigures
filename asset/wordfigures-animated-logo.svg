@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <!-- Definitions for reusable elements -->
+  <defs>
+    <!-- Gradient background -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1">
+        <animate attributeName="stop-color" values="#f8f9fa;#e9ecef;#f8f9fa" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1">
+        <animate attributeName="stop-color" values="#e9ecef;#f8f9fa;#e9ecef" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <!-- Particle effect for data flow -->
+    <circle id="particle" r="2" fill="#228be6"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#bg-gradient)"/>
+
+  <!-- Left side: Basic text representation -->
+  <g transform="translate(20,40)">
+    <!-- Animated text entries -->
+    <g>
+      <text x="3" y="30" font-family="monospace" font-size="10" fill="#495057" opacity="0">
+        {"text":"hello"}
+        <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="0s" repeatCount="indefinite"/>
+      </text>
+      <text x="3" y="50" font-family="monospace" font-size="10" fill="#495057" opacity="0">
+        {"raw":"data"}
+        <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="1s" repeatCount="indefinite"/>
+      </text>
+      <text x="3" y="70" font-family="monospace" font-size="10" fill="#495057" opacity="0">
+        {"input":"words"}
+        <animate attributeName="opacity" values="0;1;1;0" dur="4s" begin="2s" repeatCount="indefinite"/>
+      </text>
+    </g>
+  </g>
+
+  <!-- Transformation flow -->
+  <g transform="translate(0,0)">
+    <!-- Animated flow paths -->
+    <path d="M120 100 Q200 40 280 100" stroke="#228be6" fill="none" stroke-width="2" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="10;0" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M120 100 Q200 160 280 100" stroke="#228be6" fill="none" stroke-width="2" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="10;0" dur="1s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Moving particles along the paths -->
+    <g>
+      <use href="#particle">
+        <animateMotion dur="2s" repeatCount="indefinite"
+          path="M120 100 Q200 40 280 100"/>
+      </use>
+      <use href="#particle">
+        <animateMotion dur="2s" repeatCount="indefinite" begin="1s"
+          path="M120 100 Q200 160 280 100"/>
+      </use>
+    </g>
+
+    <!-- Stage indicators with pulsing effect -->
+    <g transform="translate(160,80)">
+      <text x="-22" y="30" font-size="8" fill="#495057">Embeddings</text>
+      <circle cx="0" cy="10" r="4" fill="#228be6">
+        <animate attributeName="r" values="4;5;4" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <g transform="translate(200,100)">
+      <text x="0" y="0" font-size="8" fill="#495057">NLP</text>
+      <circle cx="0" cy="10" r="4" fill="#228be6">
+        <animate attributeName="r" values="4;5;4" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <g transform="translate(240,80)">
+      <text x="-10" y="25" font-size="8" fill="#495057">Transformers</text>
+      <circle cx="0" cy="10" r="4" fill="#228be6">
+        <animate attributeName="r" values="4;5;4" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- Right side: Animated neural network -->
+  <g transform="translate(280,40)">
+    <rect width="100" height="120" fill="#f1f3f5" stroke="#dee2e6" stroke-width="1"/>
+    
+    <g transform="translate(10,10)">
+      <!-- Neurons with pulsing effect -->
+      <g>
+        <!-- Input layer -->
+        <circle cx="10" cy="20" r="3" fill="#228be6">
+          <animate attributeName="fill-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="10" cy="40" r="3" fill="#228be6">
+          <animate attributeName="fill-opacity" values="0.5;1;0.5" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="10" cy="60" r="3" fill="#228be6">
+          <animate attributeName="fill-opacity" values="0.5;1;0.5" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- Hidden layer -->
+        <circle cx="40" cy="30" r="3" fill="#228be6">
+          <animate attributeName="fill-opacity" values="0.5;1;0.5" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="40" cy="50" r="3" fill="#228be6">
+          <animate attributeName="fill-opacity" values="0.5;1;0.5" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- Output layer -->
+        <circle cx="70" cy="40" r="3" fill="#228be6">
+          <animate attributeName="fill-opacity" values="0.5;1;0.5" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- Animated connections -->
+        <g stroke="#228be6" stroke-width="0.5">
+          <path d="M13 20 L37 30">
+            <animate attributeName="stroke-opacity" values="0.2;0.8;0.2" dur="1.5s" repeatCount="indefinite"/>
+          </path>
+          <path d="M13 40 L37 30">
+            <animate attributeName="stroke-opacity" values="0.2;0.8;0.2" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+          </path>
+          <path d="M13 60 L37 50">
+            <animate attributeName="stroke-opacity" values="0.2;0.8;0.2" dur="1.5s" begin="0.6s" repeatCount="indefinite"/>
+          </path>
+          <path d="M43 30 L67 40">
+            <animate attributeName="stroke-opacity" values="0.2;0.8;0.2" dur="1.5s" begin="0.9s" repeatCount="indefinite"/>
+          </path>
+          <path d="M43 50 L67 40">
+            <animate attributeName="stroke-opacity" values="0.2;0.8;0.2" dur="1.5s" begin="1.2s" repeatCount="indefinite"/>
+          </path>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Project name with glowing effect -->
+  <g transform="translate(200,160)">
+    <text text-anchor="middle" font-family="Arial, sans-serif">
+      <tspan x="0" y="0" font-size="24" font-weight="bold" fill="#212529">WordFigures</tspan>
+      <tspan x="0" y="20" font-size="10" fill="#495057">Text to Advanced Language Models</tspan>
+    </text>
+  </g>
+</svg>
