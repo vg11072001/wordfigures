@@ -67,7 +67,10 @@ This repository demonstrates a structured journey through Natural Language Proce
   - Tokenization and input preparation for BERT
   - Use of pre-trained BERT for text classification
 - **Purpose**: Familiarizes users with BERT and its capabilities in understanding context-rich text.
-- **Reference Paper**: [BERT.pdf](#)
+- **Reference Paper**: 
+   - [BERT.pdf](#)
+   - [BERT](https://jalammar.github.io/illustrated-bert/): 
+   - ![image](https://user-images.githubusercontent.com/67424390/210527955-cf5f1405-1585-4a11-9f51-c2097da438bf.png)
 
 
 #### **[wordFigures_part_3b_BERT_Fine_Tuning.ipynb](#)**
@@ -82,15 +85,11 @@ This repository demonstrates a structured journey through Natural Language Proce
 
 ## [Transformer](https://jalammar.github.io/illustrated-transformer/) :huggingface.co/docs/transformers/
 ![image](https://user-images.githubusercontent.com/67424390/210357353-2b203cab-73a3-4df6-9410-80291dbfa9c2.png)
-#### Step 1: Install Transformer.
-#### Step 2: Call the pretrained model.
-#### Step 3: Call the tokenizer of that particular pretrained model and encode the text in ex. seq2seq manner.
-#### Step 4: Convert these encoding into Dataset objects. (Different objects of dataset for tensorflow - tensors and pytorch)
-#### Step 5:  Translate and decode the elements in batch
-
-## [BERT](https://jalammar.github.io/illustrated-bert/): 
-![image](https://user-images.githubusercontent.com/67424390/210527955-cf5f1405-1585-4a11-9f51-c2097da438bf.png)
-
+-  Step 1: Install Transformer.
+-  Step 2: Call the pretrained model.
+-  Step 3: Call the tokenizer of that particular pretrained model and encode the text in ex. seq2seq manner.
+-  Step 4: Convert these encoding into Dataset objects. (Different objects of dataset for tensorflow - tensors and pytorch)
+-  Step 5:  Translate and decode the elements in batch
 
 ### First
 
