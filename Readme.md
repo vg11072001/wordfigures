@@ -13,6 +13,23 @@ This repository takes you on a structured journey through Natural Language Proce
 The project is organized into several notebooks, each dedicated to a specific topic or technique, making it easy to follow and learn. Whether you're a beginner or looking to deepen your understanding, WordFigures provides a step-by-step guide to mastering NLP and LLMs.
 
 
+## Contents
+- [WordFigures](#wordfigures)
+  - [Contents](#contents)
+    - [Part 1: Text Processing and Word Representations](#part-1-text-processing-and-word-representations)
+      - [**wordFigures\_part\_1a\_TextProcessing.ipynb**](#wordfigures_part_1a_textprocessingipynb)
+      - [**wordFigures\_part\_1b\_Word\_embedding.ipynb**](#wordfigures_part_1b_word_embeddingipynb)
+      - [**wordFigures\_part\_1c\_word2vec.ipynb**](#wordfigures_part_1c_word2vecipynb)
+    - [Part 2: NLP Applications](#part-2-nlp-applications)
+      - [**wordFigures\_part\_2a\_Sentiment\_Analysis.ipynb**](#wordfigures_part_2a_sentiment_analysisipynb)
+      - [**wordFigures\_part\_2b\_FakeNewsClassifierusingLSTM.ipynb**](#wordfigures_part_2b_fakenewsclassifierusinglstmipynb)
+    - [Part 3: Transformer Models and Fine-Tuning](#part-3-transformer-models-and-fine-tuning)
+    - [Transformer :huggingface.co/docs/transformers/](#transformer-huggingfacecodocstransformers)
+      - [**wordFigures\_part\_3a\_BERT.ipynb**](#wordfigures_part_3a_bertipynb)
+      - [**wordFigures\_part\_3b\_BERT\_Fine\_Tuning.ipynb**](#wordfigures_part_3b_bert_fine_tuningipynb)
+  - [Part 4: LLM, GPT](#part-4-llm-gpt)
+  - [Inspirations](#inspirations)
+
 ### Part 1: Text Processing and Word Representations
 
 * **Text Preprocessing**: Cleaning, tokenization, stemming, lemmatization, stop word removal, spell checking, etc.
